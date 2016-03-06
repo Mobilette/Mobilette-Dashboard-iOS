@@ -51,7 +51,6 @@ class OAuth1APIService: OAuth1APIProtocol {
     {
         return Promise<MBOAuthCredential> { fullfil, reject in
             
-            
             oauthswift.authorizeWithCallbackURL(
                 NSURL(string: "oauth-swift://oauth-callback//trello")!,
                 success: { credential, response, parameters in

@@ -1,25 +1,23 @@
 //
-//  MobiletteDashboardIOSLoginTrelloViewController.swift
+//  MBDUserLoginViewController.swift
 //  MobiletteDashboardIOS
 //
 //  Mobilette template version 1.0
 //
-//  Created by Benaly Issouf M'sa on 06/03/16.
+//  Created by Romain ASNAR on 07/03/16.
 //  Copyright © 2016 Mobilette. All rights reserved.
 //
 
 import Foundation
 import UIKit
-import OAuthSwift
-import MobiletteFoundation
 
-class MobiletteDashboardIOSLoginTrelloViewController:
+class MBDUserLoginViewController:
     UIViewController,
-    MobiletteDashboardIOSLoginTrelloViewInterface
+    MBDUserLoginViewInterface
 {
 	// MARK: - Property
 
-    var presenter: MobiletteDashboardIOSLoginTrelloModuleInterface? = nil
+    var presenter: MBDUserLoginModuleInterface? = nil
 
 	// MARK: - Life cycle
 
@@ -35,10 +33,10 @@ class MobiletteDashboardIOSLoginTrelloViewController:
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - Action
+    
     @IBAction func trelloConnectButton(sender: UIButton?)
     {
-        let oauthService: OAuth1APIProtocol = OAuth1APIService()
-        oauthService.authorize("trello", password: nil)
         self.presenter?.connectUserWithTrello()
     }
 }
