@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		351204961C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512048D1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloInteractor.swift */; };
+		351204971C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512048E1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloInteractorIO.swift */; };
+		351204981C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512048F1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloModuleInterface.swift */; };
+		351204991C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204901C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloNetworkController.swift */; };
+		3512049A1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloNetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204911C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloNetworkProtocol.swift */; };
+		3512049B1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204921C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloPresenter.swift */; };
+		3512049C1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204931C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloViewController.swift */; };
+		3512049D1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204941C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloViewInterface.swift */; };
+		3512049E1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204951C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloWireframe.swift */; };
 		69D508901BA8638000677D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5088F1BA8638000677D3C /* AppDelegate.swift */; };
 		69D508971BA8638100677D3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D508961BA8638100677D3C /* Images.xcassets */; };
 		69D508A61BA8638100677D3C /* MobiletteDashboardIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508A51BA8638100677D3C /* MobiletteDashboardIOSTests.swift */; };
@@ -29,6 +38,15 @@
 
 /* Begin PBXFileReference section */
 		036581518F3BA9B30C5AF09D /* Pods-MobiletteDashboardIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiletteDashboardIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobiletteDashboardIOS/Pods-MobiletteDashboardIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3512048D1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashboardIOSLoginTrelloInteractor.swift; path = ../MobiletteDashboardIOSLoginTrelloInteractor.swift; sourceTree = "<group>"; };
+		3512048E1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashboardIOSLoginTrelloInteractorIO.swift; path = ../MobiletteDashboardIOSLoginTrelloInteractorIO.swift; sourceTree = "<group>"; };
+		3512048F1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashboardIOSLoginTrelloModuleInterface.swift; path = ../MobiletteDashboardIOSLoginTrelloModuleInterface.swift; sourceTree = "<group>"; };
+		351204901C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloNetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashboardIOSLoginTrelloNetworkController.swift; path = ../MobiletteDashboardIOSLoginTrelloNetworkController.swift; sourceTree = "<group>"; };
+		351204911C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloNetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashboardIOSLoginTrelloNetworkProtocol.swift; path = ../MobiletteDashboardIOSLoginTrelloNetworkProtocol.swift; sourceTree = "<group>"; };
+		351204921C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashboardIOSLoginTrelloPresenter.swift; path = ../MobiletteDashboardIOSLoginTrelloPresenter.swift; sourceTree = "<group>"; };
+		351204931C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashboardIOSLoginTrelloViewController.swift; path = ../MobiletteDashboardIOSLoginTrelloViewController.swift; sourceTree = "<group>"; };
+		351204941C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashboardIOSLoginTrelloViewInterface.swift; path = ../MobiletteDashboardIOSLoginTrelloViewInterface.swift; sourceTree = "<group>"; };
+		351204951C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashboardIOSLoginTrelloWireframe.swift; path = ../MobiletteDashboardIOSLoginTrelloWireframe.swift; sourceTree = "<group>"; };
 		45B90A448DE9B3D5C1B5E4CC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F79D7ADBF38F7F04D43519 /* Pods_MobiletteDashboardIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobiletteDashboardIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D5088A1BA8638000677D3C /* MobiletteDashboardIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiletteDashboardIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +82,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3512048A1C8C9AF50039C6C8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3512048C1C8C9B9F0039C6C8 /* App Logic */,
+				3512048B1C8C9B7A0039C6C8 /* User Interface */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3512048B1C8C9B7A0039C6C8 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				3512048F1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloModuleInterface.swift */,
+				351204921C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloPresenter.swift */,
+				351204931C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloViewController.swift */,
+				351204941C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloViewInterface.swift */,
+				351204951C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloWireframe.swift */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		3512048C1C8C9B9F0039C6C8 /* App Logic */ = {
+			isa = PBXGroup;
+			children = (
+				3512048D1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloInteractor.swift */,
+				3512048E1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloInteractorIO.swift */,
+				351204901C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloNetworkController.swift */,
+				351204911C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloNetworkProtocol.swift */,
+			);
+			path = "App Logic";
+			sourceTree = "<group>";
+		};
 		68C56423EC355ACA6D29624A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +191,7 @@
 		69D508B01BA863B900677D3C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3512048A1C8C9AF50039C6C8 /* Login */,
 				69D508B91BA8672000677D3C /* Root */,
 			);
 			path = Modules;
@@ -364,9 +415,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351204981C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloModuleInterface.swift in Sources */,
 				69D508BB1BA8673700677D3C /* RootWireframe.swift in Sources */,
+				3512049D1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloViewInterface.swift in Sources */,
+				351204961C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloInteractor.swift in Sources */,
+				351204991C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloNetworkController.swift in Sources */,
 				69D508B61BA8648800677D3C /* APIDateISO8601Transform.swift in Sources */,
+				351204971C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloInteractorIO.swift in Sources */,
+				3512049B1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloPresenter.swift in Sources */,
+				3512049C1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloViewController.swift in Sources */,
 				69D508901BA8638000677D3C /* AppDelegate.swift in Sources */,
+				3512049A1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloNetworkProtocol.swift in Sources */,
+				3512049E1C8C9BFE0039C6C8 /* MobiletteDashboardIOSLoginTrelloWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
