@@ -11,7 +11,7 @@ import MobiletteFoundation
 import PromiseKit
 import OAuthSwift
 
-class OAuth1APIService: OAuth2APIProtocol {
+class OAuth1APIService: OAuth1APIProtocol {
     
     private let oauthswift = OAuth1Swift(
         consumerKey: "d0d775fa9641cb751701dd0d5b6d97b8",
@@ -55,7 +55,7 @@ class OAuth1APIService: OAuth2APIProtocol {
             oauthswift.authorizeWithCallbackURL(
                 NSURL(string: "https://oauthswift.herokuapp.com/callback/trello")!,
                 success: { credential, response, parameters in
-//                    print(credential.oauth_token)
+                    print(credential.oauth_token)
 //                    print(credential.oauth_token_secret)
 //                    print(parameters["user_id"])
                     

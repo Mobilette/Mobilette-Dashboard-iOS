@@ -10,7 +10,7 @@ import Foundation
 import PromiseKit
 import MobiletteFoundation
 
-protocol OAuth2APIProtocol
+protocol OAuth1APIProtocol
 {
     func authorize() -> Promise<MBOAuthCredential>
 }
