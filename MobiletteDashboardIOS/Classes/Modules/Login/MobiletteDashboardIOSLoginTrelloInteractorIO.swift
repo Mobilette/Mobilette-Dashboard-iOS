@@ -8,12 +8,15 @@
 //  Copyright © 2016 Mobilette. All rights reserved.
 //
 
+import Foundation
+
 protocol MobiletteDashboardIOSLoginTrelloInteractorInput: class
 {
-
+    func connectUserWithTrello()
 }
 
 protocol MobiletteDashboardIOSLoginTrelloInteractorOutput: class
 {
-
+    func didConnectUserWithTrello(/* User credentials */)
+    func didFailToConnectUserWithTrello(error: ErrorType)
 }

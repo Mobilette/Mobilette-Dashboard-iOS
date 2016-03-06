@@ -27,7 +27,22 @@ class MobiletteDashboardIOSLoginTrelloPresenter:
     	
     }
     
+    func connectUserWithTrello()
+    {
+        
+    }
+    
     // MARK: - MobiletteDashboardIOSLoginTrello interactor output interface
 
+    func didConnectUserWithTrello(/* User credentials */)
+    {
+        
+    }
+    
+    func didFailToConnectUserWithTrello(error: ErrorType)
+    {
+        
+    }
+    
     // MARK: - Converting entities
 }

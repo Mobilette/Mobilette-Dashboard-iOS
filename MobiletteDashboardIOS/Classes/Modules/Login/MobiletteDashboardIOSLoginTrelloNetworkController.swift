@@ -9,7 +9,7 @@
 //
 
 import Foundation
-// import PromiseKit
+import PromiseKit
 // import ObjectMapper
 
 class MobiletteDashboardIOSLoginTrelloNetworkController: MobiletteDashboardIOSLoginTrelloNetworkProtocol
@@ -19,6 +19,13 @@ class MobiletteDashboardIOSLoginTrelloNetworkController: MobiletteDashboardIOSLo
     // MARK: - Life cycle
 
     // MARK: - Network
+    
+    func userTrelloAuthentification() -> Promise<String>
+    {
+        return Promise<String> { fullfil, reject in
+            // To do: perform trello authentification 
+        }
+    }
     
     // MARK: - Error
     

@@ -11,4 +11,5 @@
 protocol MobiletteDashboardIOSLoginTrelloModuleInterface: class
 {
 	func updateView()
+    func connectUserWithTrello()
 }

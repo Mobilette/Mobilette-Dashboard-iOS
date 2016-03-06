@@ -20,5 +20,10 @@ class MobiletteDashboardIOSLoginTrelloInteractor:
 
     // MARK: - MobiletteDashboardIOSLoginTrello interactor input interface
 
+    func connectUserWithTrello()
+    {
+        
+    }
+    
     // MARK: - Converting raw datas
 }

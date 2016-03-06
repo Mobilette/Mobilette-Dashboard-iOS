@@ -9,7 +9,9 @@
 //
 
 import Foundation
+import PromiseKit
 
 protocol MobiletteDashboardIOSLoginTrelloNetworkProtocol: class
 {
+    func userTrelloAuthentification() -> Promise<String>
 }
