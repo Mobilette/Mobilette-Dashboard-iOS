@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3591ACD11C56858A00645CE4 /* OAuth2PasswordGrantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591ACD01C56858A00645CE4 /* OAuth2PasswordGrantService.swift */; };
-		698F88561C5E1BC300A308F8 /* OAuth2APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F88551C5E1BC300A308F8 /* OAuth2APIProtocol.swift */; };
 		69D508901BA8638000677D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5088F1BA8638000677D3C /* AppDelegate.swift */; };
 		69D508971BA8638100677D3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D508961BA8638100677D3C /* Images.xcassets */; };
 		69D508A61BA8638100677D3C /* MobiletteDashboardIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508A51BA8638100677D3C /* MobiletteDashboardIOSTests.swift */; };
@@ -31,10 +29,8 @@
 
 /* Begin PBXFileReference section */
 		036581518F3BA9B30C5AF09D /* Pods-MobiletteDashboardIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiletteDashboardIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobiletteDashboardIOS/Pods-MobiletteDashboardIOS.debug.xcconfig"; sourceTree = "<group>"; };
-		3591ACD01C56858A00645CE4 /* OAuth2PasswordGrantService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2PasswordGrantService.swift; sourceTree = "<group>"; };
 		45B90A448DE9B3D5C1B5E4CC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F79D7ADBF38F7F04D43519 /* Pods_MobiletteDashboardIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobiletteDashboardIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		698F88551C5E1BC300A308F8 /* OAuth2APIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2APIProtocol.swift; sourceTree = "<group>"; };
 		69D5088A1BA8638000677D3C /* MobiletteDashboardIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiletteDashboardIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D5088E1BA8638000677D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D5088F1BA8638000677D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,15 +64,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3591ACCF1C56853400645CE4 /* OAuth2 */ = {
-			isa = PBXGroup;
-			children = (
-				3591ACD01C56858A00645CE4 /* OAuth2PasswordGrantService.swift */,
-				698F88551C5E1BC300A308F8 /* OAuth2APIProtocol.swift */,
-			);
-			path = OAuth2;
-			sourceTree = "<group>";
-		};
 		68C56423EC355ACA6D29624A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +149,6 @@
 		69D508B11BA863C000677D3C /* Commons */ = {
 			isa = PBXGroup;
 			children = (
-				3591ACCF1C56853400645CE4 /* OAuth2 */,
 				69D508B31BA8645300677D3C /* API */,
 				69D508B21BA8643300677D3C /* Domain */,
 			);
@@ -378,8 +364,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				698F88561C5E1BC300A308F8 /* OAuth2APIProtocol.swift in Sources */,
-				3591ACD11C56858A00645CE4 /* OAuth2PasswordGrantService.swift in Sources */,
 				69D508BB1BA8673700677D3C /* RootWireframe.swift in Sources */,
 				69D508B61BA8648800677D3C /* APIDateISO8601Transform.swift in Sources */,
 				69D508901BA8638000677D3C /* AppDelegate.swift in Sources */,
