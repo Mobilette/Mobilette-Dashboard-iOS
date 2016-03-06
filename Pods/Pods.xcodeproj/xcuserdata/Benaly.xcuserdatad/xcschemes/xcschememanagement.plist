@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>OAuthSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>OMGHTTPURLRQ.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,20 +49,10 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftKeychain.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>p2.OAuth2.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>05167AC5F939CE0DB359C550C6F0B194</key>
+		<key>053D239EEF3E6F84F72486C4F3649A77</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,17 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>64218195CB120686642A0F03BF4E3272</key>
+		<key>6D37E3F4D52E722AD762D41B718BA3DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6BD1D0F4455F641B29DBFF224B409D97</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B51E12F2346F2C9809F856F29F7C38CA</key>
+		<key>BD770B168E8937BB81DA7A92CE881AEF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

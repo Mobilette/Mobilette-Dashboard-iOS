@@ -10,7 +10,7 @@ pod 'ObjectMapper'
 
 pod 'PromiseKit'
 
-pod 'p2.OAuth2'
+pod 'OAuthSwift'
 
 pod 'NSLogger'
 pod 'MBLogger'

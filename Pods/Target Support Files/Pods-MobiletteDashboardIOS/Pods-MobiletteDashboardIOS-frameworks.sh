@@ -88,20 +88,18 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$CONFIGURATION_BUILD_DIR/MBLogger/MBLogger.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/MobiletteFoundation/MobiletteFoundation.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/NSLogger/NSLogger.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/OAuthSwift/OAuthSwift.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/OMGHTTPURLRQ/OMGHTTPURLRQ.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/ObjectMapper/ObjectMapper.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/PromiseKit/PromiseKit.framework"
-  install_framework "$CONFIGURATION_BUILD_DIR/SwiftKeychain/SwiftKeychain.framework"
-  install_framework "$CONFIGURATION_BUILD_DIR/p2.OAuth2/p2_OAuth2.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/MBLogger/MBLogger.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/MobiletteFoundation/MobiletteFoundation.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/NSLogger/NSLogger.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/OAuthSwift/OAuthSwift.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/OMGHTTPURLRQ/OMGHTTPURLRQ.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/ObjectMapper/ObjectMapper.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/PromiseKit/PromiseKit.framework"
-  install_framework "$CONFIGURATION_BUILD_DIR/SwiftKeychain/SwiftKeychain.framework"
-  install_framework "$CONFIGURATION_BUILD_DIR/p2.OAuth2/p2_OAuth2.framework"
 fi
