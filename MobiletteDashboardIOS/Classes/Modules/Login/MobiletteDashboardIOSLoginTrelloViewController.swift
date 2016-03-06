@@ -11,6 +11,7 @@
 import Foundation
 import UIKit
 import OAuthSwift
+import MobiletteFoundation
 
 class MobiletteDashboardIOSLoginTrelloViewController:
     UIViewController,
@@ -36,6 +37,8 @@ class MobiletteDashboardIOSLoginTrelloViewController:
     
     @IBAction func trelloConnectButton(sender: UIButton?)
     {
+        let oauthService: OAuth1APIProtocol = OAuth1APIService()
+        oauthService.authorize("trello", password: nil)
         self.presenter?.connectUserWithTrello()
     }
 }

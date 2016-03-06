@@ -16,13 +16,13 @@ class MobiletteDashboardIOSLoginTrelloInteractor:
 	// MARK: - Property
     
     weak var output: MobiletteDashboardIOSLoginTrelloInteractorOutput? = nil
-    // var networkController: MobiletteDashboardIOSLoginTrelloNetworkProtocol? = nil
+    var networkController: MobiletteDashboardIOSLoginTrelloNetworkProtocol? = nil
 
     // MARK: - MobiletteDashboardIOSLoginTrello interactor input interface
 
     func connectUserWithTrello()
     {
-        
+        self.networkController?.userTrelloAuthentification()
     }
     
     // MARK: - Converting raw datas

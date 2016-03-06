@@ -21,7 +21,7 @@ class OAuth1APIService: OAuth1APIProtocol {
         accessTokenUrl: "https://trello.com/1/OAuthGetAccessToken"
     )
 
-    func authorize() -> Promise<MBOAuthCredential>
+    func authorize(username: String, password: String?) -> Promise<MBOAuthCredential>
     {
         return Promise<MBOAuthCredential> { [weak self] fullfil, reject in
             let credential: MBOAuthCredential
@@ -29,7 +29,7 @@ class OAuth1APIService: OAuth1APIProtocol {
                 credential = try MBOAuthCredential.retreiveCredential()
             }
             catch _ as MBError {
-                self?.performAuthorize()
+                self?.performAuthorize(username, password: password)
                     .then { credential -> Void in
                         fullfil(credential)
                     }
@@ -47,19 +47,15 @@ class OAuth1APIService: OAuth1APIProtocol {
         }
     }
     
-    private func performAuthorize() -> Promise<MBOAuthCredential>
+    private func performAuthorize(username: String, password: String?) -> Promise<MBOAuthCredential>
     {
         return Promise<MBOAuthCredential> { fullfil, reject in
             
             
             oauthswift.authorizeWithCallbackURL(
-                NSURL(string: "https://oauthswift.herokuapp.com/callback/trello")!,
+                NSURL(string: "oauth-swift://oauth-callback//trello")!,
                 success: { credential, response, parameters in
-                    print(credential.oauth_token)
-//                    print(credential.oauth_token_secret)
-//                    print(parameters["user_id"])
-                    
-                    if let credential = self.buildCredential(credential) {
+                    if let credential = self.buildCredential(username, parameters: credential) {
                         do {
                             try credential.storeToKeychain()
                         }
@@ -85,15 +81,11 @@ class OAuth1APIService: OAuth1APIProtocol {
         }
     }
     
-    private func buildCredential(parameters: OAuthSwiftCredential) -> MBOAuthCredential?
+    private func buildCredential(username: String, parameters: OAuthSwiftCredential) -> MBOAuthCredential?
     {
-//        if let refreshToken = parameters["refresh_token"],
-//            let accessToken = parameters["access_token"],
-//            let date = parameters["expires_in"] as? NSDate
-//        {
-//            let credential = MBOAuthCredential(userIdentifier: username, accessToken: "\(accessToken)", refreshToken: "\(refreshToken)", expirationDate: date)
-//            return credential
-//        }
-        return nil
+        let refreshToken = parameters.oauth_token_secret
+        let accessToken = parameters.oauth_token
+        let credential = MBOAuthCredential(userIdentifier: username, accessToken: "\(accessToken)", refreshToken: "\(refreshToken)", expirationDate: nil)
+        return credential
     }
 }

@@ -12,5 +12,5 @@ import MobiletteFoundation
 
 protocol OAuth1APIProtocol
 {
-    func authorize() -> Promise<MBOAuthCredential>
+    func authorize(username: String, password: String?) -> Promise<MBOAuthCredential>
 }

@@ -29,7 +29,7 @@ class MobiletteDashboardIOSLoginTrelloPresenter:
     
     func connectUserWithTrello()
     {
-        
+        self.interactor?.connectUserWithTrello()
     }
     
     // MARK: - MobiletteDashboardIOSLoginTrello interactor output interface
