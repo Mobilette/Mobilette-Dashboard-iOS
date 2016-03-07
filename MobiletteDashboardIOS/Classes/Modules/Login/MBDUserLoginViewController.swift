@@ -37,11 +37,15 @@ class MBDUserLoginViewController:
     
     func userDidDenyGrantAccess(title title: String, message: String)
     {
-        let alertView = UIAlertView(title: title, message: message, delegate: nil, cancelButtonTitle: "OK")
-        alertView.show()
+        self.displayError(title: title, message: message)
     }
     
     func userDidGrantAccessWithError(title title: String, message: String)
+    {
+        self.displayError(title: title, message: message)
+    }
+    
+    private func displayError(title title: String, message: String)
     {
         let alertView = UIAlertView(title: title, message: message, delegate: nil, cancelButtonTitle: "OK")
         alertView.show()
