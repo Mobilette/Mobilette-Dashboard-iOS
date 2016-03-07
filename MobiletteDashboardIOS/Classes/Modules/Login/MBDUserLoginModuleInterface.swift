@@ -1,14 +1,14 @@
 //
-//  MobiletteDashboardIOSLoginTrelloModuleInterface.swift
+//  MBDUserLoginModuleInterface.swift
 //  MobiletteDashboardIOS
 //
 //  Mobilette template version 1.0
 //
-//  Created by Benaly Issouf M'sa on 06/03/16.
+//  Created by Romain ASNAR on 07/03/16.
 //  Copyright © 2016 Mobilette. All rights reserved.
 //
 
-protocol MobiletteDashboardIOSLoginTrelloModuleInterface: class
+protocol MBDUserLoginModuleInterface: class
 {
 	func updateView()
     func connectUserWithTrello()
