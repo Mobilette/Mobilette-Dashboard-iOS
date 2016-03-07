@@ -41,7 +41,16 @@ class MBDUserLoginPresenter:
     
     func didFailToConnectUserWithTrello(error: NSError)
     {
-        print(error.userInfo.keys)
+        switch error.code {
+        case -1:
+            let title = "Failed to sign in on Trello"
+            let message = "You need to allow access to Mobilette Dashboard to use our service."
+            self.view?.userDidDenyGrantAccess(title: title, message: message)
+        default:
+            let title = "Failed to sign in on Trello"
+            let message = "Try to connect later because an unknown error occured."
+            self.view?.userDidGrantAccessWithError(title: title, message: message)
+        }
     }
 
     // MARK: - Converting entities

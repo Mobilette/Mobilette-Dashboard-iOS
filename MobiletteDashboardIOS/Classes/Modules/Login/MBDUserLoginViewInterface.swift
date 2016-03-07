@@ -10,5 +10,6 @@
 
 protocol MBDUserLoginViewInterface: class
 {
-
+    func userDidDenyGrantAccess(title title: String, message: String)
+    func userDidGrantAccessWithError(title title: String, message: String)
 }

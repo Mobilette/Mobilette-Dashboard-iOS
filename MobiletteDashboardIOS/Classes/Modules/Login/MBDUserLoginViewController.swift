@@ -33,6 +33,20 @@ class MBDUserLoginViewController:
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - User login view interface
+    
+    func userDidDenyGrantAccess(title title: String, message: String)
+    {
+        let alertView = UIAlertView(title: title, message: message, delegate: nil, cancelButtonTitle: "OK")
+        alertView.show()
+    }
+    
+    func userDidGrantAccessWithError(title title: String, message: String)
+    {
+        let alertView = UIAlertView(title: title, message: message, delegate: nil, cancelButtonTitle: "OK")
+        alertView.show()
+    }
+    
     // MARK: - Action
     
     @IBAction func trelloConnectButton(sender: UIButton?)
