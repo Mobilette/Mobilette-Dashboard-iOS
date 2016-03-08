@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		351204A11C8CA9010039C6C8 /* OAuth1APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204A01C8CA9010039C6C8 /* OAuth1APIService.swift */; };
 		351204A31C8CDC110039C6C8 /* OAuth1APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204A21C8CDC110039C6C8 /* OAuth1APIProtocol.swift */; };
+		351204B11C8CE65D0039C6C8 /* MobiletteDashbordTaskListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204A81C8CE65D0039C6C8 /* MobiletteDashbordTaskListInteractor.swift */; };
+		351204B21C8CE65D0039C6C8 /* MobiletteDashbordTaskListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204A91C8CE65D0039C6C8 /* MobiletteDashbordTaskListInteractorIO.swift */; };
+		351204B31C8CE65D0039C6C8 /* MobiletteDashbordTaskListModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204AA1C8CE65D0039C6C8 /* MobiletteDashbordTaskListModuleInterface.swift */; };
+		351204B41C8CE65D0039C6C8 /* MobiletteDashbordTaskListNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204AB1C8CE65D0039C6C8 /* MobiletteDashbordTaskListNetworkController.swift */; };
+		351204B51C8CE65D0039C6C8 /* MobiletteDashbordTaskListNetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204AC1C8CE65D0039C6C8 /* MobiletteDashbordTaskListNetworkProtocol.swift */; };
+		351204B61C8CE65D0039C6C8 /* MobiletteDashbordTaskListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204AD1C8CE65D0039C6C8 /* MobiletteDashbordTaskListPresenter.swift */; };
+		351204B71C8CE65D0039C6C8 /* MobiletteDashbordTaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204AE1C8CE65D0039C6C8 /* MobiletteDashbordTaskListViewController.swift */; };
+		351204B81C8CE65D0039C6C8 /* MobiletteDashbordTaskListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204AF1C8CE65D0039C6C8 /* MobiletteDashbordTaskListViewInterface.swift */; };
+		351204B91C8CE65D0039C6C8 /* MobiletteDashbordTaskListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204B01C8CE65D0039C6C8 /* MobiletteDashbordTaskListWireframe.swift */; };
+		351204BD1C8CEA820039C6C8 /* TaskJSONItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204BC1C8CEA820039C6C8 /* TaskJSONItem.swift */; };
+		351204BF1C8CEADE0039C6C8 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204BE1C8CEADE0039C6C8 /* TaskItem.swift */; };
+		351204C11C8CED580039C6C8 /* TaskListViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351204C01C8CED580039C6C8 /* TaskListViewItem.swift */; };
 		697367121C8CE3B00023409B /* MobiletteDashboardIOSLoginTrelloInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697367091C8CE3B00023409B /* MobiletteDashboardIOSLoginTrelloInteractor.swift */; };
 		697367131C8CE3B00023409B /* MobiletteDashboardIOSLoginTrelloInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6973670A1C8CE3B00023409B /* MobiletteDashboardIOSLoginTrelloInteractorIO.swift */; };
 		697367141C8CE3B00023409B /* MobiletteDashboardIOSLoginTrelloModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6973670B1C8CE3B00023409B /* MobiletteDashboardIOSLoginTrelloModuleInterface.swift */; };
@@ -42,6 +54,18 @@
 		036581518F3BA9B30C5AF09D /* Pods-MobiletteDashboardIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiletteDashboardIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobiletteDashboardIOS/Pods-MobiletteDashboardIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		351204A01C8CA9010039C6C8 /* OAuth1APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth1APIService.swift; sourceTree = "<group>"; };
 		351204A21C8CDC110039C6C8 /* OAuth1APIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth1APIProtocol.swift; sourceTree = "<group>"; };
+		351204A81C8CE65D0039C6C8 /* MobiletteDashbordTaskListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashbordTaskListInteractor.swift; path = ../MobiletteDashbordTaskListInteractor.swift; sourceTree = "<group>"; };
+		351204A91C8CE65D0039C6C8 /* MobiletteDashbordTaskListInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashbordTaskListInteractorIO.swift; path = ../MobiletteDashbordTaskListInteractorIO.swift; sourceTree = "<group>"; };
+		351204AA1C8CE65D0039C6C8 /* MobiletteDashbordTaskListModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashbordTaskListModuleInterface.swift; path = ../MobiletteDashbordTaskListModuleInterface.swift; sourceTree = "<group>"; };
+		351204AB1C8CE65D0039C6C8 /* MobiletteDashbordTaskListNetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashbordTaskListNetworkController.swift; path = ../MobiletteDashbordTaskListNetworkController.swift; sourceTree = "<group>"; };
+		351204AC1C8CE65D0039C6C8 /* MobiletteDashbordTaskListNetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashbordTaskListNetworkProtocol.swift; path = ../MobiletteDashbordTaskListNetworkProtocol.swift; sourceTree = "<group>"; };
+		351204AD1C8CE65D0039C6C8 /* MobiletteDashbordTaskListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashbordTaskListPresenter.swift; path = ../MobiletteDashbordTaskListPresenter.swift; sourceTree = "<group>"; };
+		351204AE1C8CE65D0039C6C8 /* MobiletteDashbordTaskListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashbordTaskListViewController.swift; path = ../MobiletteDashbordTaskListViewController.swift; sourceTree = "<group>"; };
+		351204AF1C8CE65D0039C6C8 /* MobiletteDashbordTaskListViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashbordTaskListViewInterface.swift; path = ../MobiletteDashbordTaskListViewInterface.swift; sourceTree = "<group>"; };
+		351204B01C8CE65D0039C6C8 /* MobiletteDashbordTaskListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobiletteDashbordTaskListWireframe.swift; path = ../MobiletteDashbordTaskListWireframe.swift; sourceTree = "<group>"; };
+		351204BC1C8CEA820039C6C8 /* TaskJSONItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskJSONItem.swift; sourceTree = "<group>"; };
+		351204BE1C8CEADE0039C6C8 /* TaskItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		351204C01C8CED580039C6C8 /* TaskListViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewItem.swift; sourceTree = "<group>"; };
 		45B90A448DE9B3D5C1B5E4CC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F79D7ADBF38F7F04D43519 /* Pods_MobiletteDashboardIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobiletteDashboardIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		697367091C8CE3B00023409B /* MobiletteDashboardIOSLoginTrelloInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobiletteDashboardIOSLoginTrelloInteractor.swift; sourceTree = "<group>"; };
@@ -93,6 +117,65 @@
 				351204A21C8CDC110039C6C8 /* OAuth1APIProtocol.swift */,
 			);
 			name = OAuth1;
+			sourceTree = "<group>";
+		};
+		351204A41C8CE53A0039C6C8 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				351204A51C8CE5840039C6C8 /* List */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		351204A51C8CE5840039C6C8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				351204A71C8CE6160039C6C8 /* App Logic */,
+				351204A61C8CE5E70039C6C8 /* User Interface */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		351204A61C8CE5E70039C6C8 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				351204BB1C8CEA2E0039C6C8 /* Entity */,
+				351204AA1C8CE65D0039C6C8 /* MobiletteDashbordTaskListModuleInterface.swift */,
+				351204AD1C8CE65D0039C6C8 /* MobiletteDashbordTaskListPresenter.swift */,
+				351204AE1C8CE65D0039C6C8 /* MobiletteDashbordTaskListViewController.swift */,
+				351204AF1C8CE65D0039C6C8 /* MobiletteDashbordTaskListViewInterface.swift */,
+				351204B01C8CE65D0039C6C8 /* MobiletteDashbordTaskListWireframe.swift */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		351204A71C8CE6160039C6C8 /* App Logic */ = {
+			isa = PBXGroup;
+			children = (
+				351204BA1C8CEA0C0039C6C8 /* Entity */,
+				351204A81C8CE65D0039C6C8 /* MobiletteDashbordTaskListInteractor.swift */,
+				351204A91C8CE65D0039C6C8 /* MobiletteDashbordTaskListInteractorIO.swift */,
+				351204AB1C8CE65D0039C6C8 /* MobiletteDashbordTaskListNetworkController.swift */,
+				351204AC1C8CE65D0039C6C8 /* MobiletteDashbordTaskListNetworkProtocol.swift */,
+			);
+			path = "App Logic";
+			sourceTree = "<group>";
+		};
+		351204BA1C8CEA0C0039C6C8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				351204BC1C8CEA820039C6C8 /* TaskJSONItem.swift */,
+				351204BE1C8CEADE0039C6C8 /* TaskItem.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		351204BB1C8CEA2E0039C6C8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				351204C01C8CED580039C6C8 /* TaskListViewItem.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		68C56423EC355ACA6D29624A /* Pods */ = {
@@ -204,6 +287,7 @@
 		69D508B01BA863B900677D3C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				351204A41C8CE53A0039C6C8 /* Tasks */,
 				697367081C8CE39F0023409B /* Login */,
 				69D508B91BA8672000677D3C /* Root */,
 			);
@@ -431,17 +515,29 @@
 			files = (
 				697367171C8CE3B00023409B /* MobiletteDashboardIOSLoginTrelloPresenter.swift in Sources */,
 				69D508BB1BA8673700677D3C /* RootWireframe.swift in Sources */,
+				351204B51C8CE65D0039C6C8 /* MobiletteDashbordTaskListNetworkProtocol.swift in Sources */,
 				697367121C8CE3B00023409B /* MobiletteDashboardIOSLoginTrelloInteractor.swift in Sources */,
 				697367141C8CE3B00023409B /* MobiletteDashboardIOSLoginTrelloModuleInterface.swift in Sources */,
+				351204B31C8CE65D0039C6C8 /* MobiletteDashbordTaskListModuleInterface.swift in Sources */,
+				351204B61C8CE65D0039C6C8 /* MobiletteDashbordTaskListPresenter.swift in Sources */,
+				351204B21C8CE65D0039C6C8 /* MobiletteDashbordTaskListInteractorIO.swift in Sources */,
 				697367151C8CE3B00023409B /* MobiletteDashboardIOSLoginTrelloNetworkController.swift in Sources */,
+				351204BD1C8CEA820039C6C8 /* TaskJSONItem.swift in Sources */,
 				697367181C8CE3B00023409B /* MobiletteDashboardIOSLoginTrelloViewController.swift in Sources */,
 				69D508B61BA8648800677D3C /* APIDateISO8601Transform.swift in Sources */,
+				351204C11C8CED580039C6C8 /* TaskListViewItem.swift in Sources */,
 				697367131C8CE3B00023409B /* MobiletteDashboardIOSLoginTrelloInteractorIO.swift in Sources */,
+				351204B81C8CE65D0039C6C8 /* MobiletteDashbordTaskListViewInterface.swift in Sources */,
+				351204B41C8CE65D0039C6C8 /* MobiletteDashbordTaskListNetworkController.swift in Sources */,
+				351204B91C8CE65D0039C6C8 /* MobiletteDashbordTaskListWireframe.swift in Sources */,
 				351204A11C8CA9010039C6C8 /* OAuth1APIService.swift in Sources */,
 				697367191C8CE3B00023409B /* MobiletteDashboardIOSLoginTrelloViewInterface.swift in Sources */,
 				69D508901BA8638000677D3C /* AppDelegate.swift in Sources */,
+				351204B71C8CE65D0039C6C8 /* MobiletteDashbordTaskListViewController.swift in Sources */,
 				351204A31C8CDC110039C6C8 /* OAuth1APIProtocol.swift in Sources */,
+				351204BF1C8CEADE0039C6C8 /* TaskItem.swift in Sources */,
 				697367161C8CE3B00023409B /* MobiletteDashboardIOSLoginTrelloNetworkProtocol.swift in Sources */,
+				351204B11C8CE65D0039C6C8 /* MobiletteDashbordTaskListInteractor.swift in Sources */,
 				6973671A1C8CE3B00023409B /* MobiletteDashboardIOSLoginTrelloWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
