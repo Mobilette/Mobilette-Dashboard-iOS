@@ -10,6 +10,6 @@
 
 protocol MobiletteDashbordTaskListModuleInterface: class
 {
-	func updateView()
-    func getListOfTasks()
+    func updateView()
+    func retrieveListOfTasks()
 }

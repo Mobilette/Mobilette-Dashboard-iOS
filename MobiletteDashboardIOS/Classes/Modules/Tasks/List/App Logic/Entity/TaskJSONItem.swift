@@ -39,7 +39,6 @@ class TaskJSONItem:
     var description: String {
         return "{ TaskJSONItem" + "\n"
             + "identifier: \(self.identifier)" + "\n"
-            //+ "<# property name #>: \(self.<# property name #>)" + "\n"
             + "}" + "\n"
     }
 }

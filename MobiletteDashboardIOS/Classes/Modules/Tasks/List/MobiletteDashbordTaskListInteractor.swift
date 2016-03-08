@@ -26,11 +26,11 @@ class MobiletteDashbordTaskListInteractor:
         self.networkController?.fetchListOfTrelloTasks()
         .then { [unowned self] JSONItem -> Void in
         let item = self.tasksItem(JSONItem)
-        MBLog.app(MBLog.Level.High, object: "Did <# successful action #>: \(item).")
+        MBLog.app(MBLog.Level.High, object: "Did find trello task's list: \(item).")
         self.output?.didFindListOfTrelloTasks(item)
         }
         .error { [unowned self] error -> Void in
-            MBLog.app(MBLog.Level.High, object: "Did fail to <# failure action #>.")
+            MBLog.app(MBLog.Level.High, object: "Did fail to Did find trello task's list.")
             self.output?.didFailToFindListOfTrelloTasks(error)
         }
     }

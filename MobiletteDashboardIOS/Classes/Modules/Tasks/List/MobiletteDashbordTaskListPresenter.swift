@@ -24,10 +24,10 @@ class MobiletteDashbordTaskListPresenter:
 
     func updateView()
     {
-    	self.getListOfTasks()
+    	self.retrieveListOfTasks()
     }
     
-    func getListOfTasks()
+    func retrieveListOfTasks()
     {
         self.interactor?.findListOfTrelloTasks()
     }
