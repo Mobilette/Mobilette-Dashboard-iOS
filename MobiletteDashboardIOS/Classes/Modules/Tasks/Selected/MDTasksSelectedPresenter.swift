@@ -24,10 +24,10 @@ class MDTasksSelectedPresenter:
 
     func updateView()
     {
-    	self.getSelectedTasksOnTrello()
+    	self.retrieveSelectedTasksOnTrello()
     }
     
-    func getSelectedTasksOnTrello()
+    func retrieveSelectedTasksOnTrello()
     {
         self.interactor?.findTaskTrelloSelected()
     }

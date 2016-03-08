@@ -11,5 +11,5 @@
 protocol MDTasksSelectedModuleInterface: class
 {
 	func updateView()
-    func getSelectedTasksOnTrello()
+    func retrieveSelectedTasksOnTrello()
 }

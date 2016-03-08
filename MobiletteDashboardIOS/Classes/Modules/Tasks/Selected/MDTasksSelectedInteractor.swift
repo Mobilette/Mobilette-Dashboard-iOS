@@ -19,19 +19,29 @@ class MDTasksSelectedInteractor:
     weak var output: MDTasksSelectedInteractorOutput? = nil
     var networkController: MDTasksSelectedNetworkProtocol? = nil
 
+    private var taskSelectedRepository: TaskRepository = TaskRepository()
+    
     // MARK: - MDTasksSelected interactor input interface
 
     func findTaskTrelloSelected()
     {
-        self.networkController?.fetchTaskTrelloSelected()
-        .then { [unowned self] JSONItem -> Void in
-        let item = self.selectedItems(JSONItem)
-        MBLog.app(MBLog.Level.High, object: "Did <# successful action #>: \(item).")
-        self.output?.didFindTaskTrelloSelected(item)
-        }
-        .error { [unowned self] error -> Void in
-            MBLog.app(MBLog.Level.High, object: "Did fail to <# failure action #>.")
-            self.output?.didFailToFindTaskTrelloSelected(error)
+        if self.taskSelectedRepository.tasks.count > 0 {
+            let selectedTaskItems = self.selectedTaskItemsWithSelectedTasks(self.taskSelectedRepository.tasks)
+            self.output?.didFindTaskTrelloSelected(selectedTaskItems)
+        } else {
+            self.networkController?.fetchTaskTrelloSelected()
+                .then { [unowned self] JSONItems -> Void in
+                    let tasksSelected = self.tasksWithSelectedTaskJSONItems(JSONItems)
+                    self.taskSelectedRepository.removeAllTasks()
+                    self.taskSelectedRepository.addTasks(tasksSelected)
+                    let item = self.selectedItems(JSONItems)
+                    MBLog.app(MBLog.Level.High, object: "Did find selected tasks: \(item).")
+                    self.output?.didFindTaskTrelloSelected(item)
+                }
+                .error { [unowned self] error -> Void in
+                    MBLog.app(MBLog.Level.High, object: "Did fail to find selected tasks.")
+                    self.output?.didFailToFindTaskTrelloSelected(error)
+            }
         }
     }
     
@@ -45,5 +55,29 @@ class MDTasksSelectedInteractor:
             selectedItems.append(selectedItem)
         }
         return selectedItems
+    }
+    
+    private func tasksWithSelectedTaskJSONItems(
+        selectedTaskJSONItems: [SelectedTaskJSONItem]
+        ) -> [Task]
+    {
+        var tasks: [Task] = []
+        for item in selectedTaskJSONItems {
+            let task = Task(selectedTaskJSONItem: item)
+            tasks.append(task)
+        }
+        return tasks
+    }
+    
+    private func selectedTaskItemsWithSelectedTasks(
+        tasks: [Task]
+        ) -> [SelectedTaskItem]
+    {
+        var selectedTaskItems: [SelectedTaskItem] = []
+        for task in tasks {
+            let selectedTaskItem = SelectedTaskItem(task: task)
+            selectedTaskItems.append(selectedTaskItem)
+        }
+        return selectedTaskItems
     }
 }
